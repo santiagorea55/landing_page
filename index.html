@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro al Taller</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+
+<body>
+    <h1 id="titulo">Registro de Alumnos</h1>
+    <p>
+        Registrate al taller escolar llenando los siguientes datos
+    </p>
+
+    <div id="formulario">
+
+        <form id="registroForm">
+            <label>
+                <i class="bi bi-person"></i> Nombre completo:
+            </label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+            <label>
+                <i class="bi bi-card-text"></i> Numero de control:
+            </label>
+            <input type="text" id="control" placeholder="Escribe tu número de control">
+
+            <label>
+                <i class="bi bi-envelope"></i> Correo electrónico:
+            </label>
+            <input type="email" id="correo" placeholder="correo@ejemplo.com">
+
+            <label>
+                <i class="bi bi-mortarboard"></i> Carrera:
+            </label>
+            <select id="carrera">
+                <option value=""> Selecciona una carrera</option>
+                <option>TICs</option>
+                <option>Industrial</option>
+                <option>Gestion</option>
+                <option>Ambiental</option>
+                <option>Ferroviaria</option>
+                <option>Logistica</option>
+            </select>
+
+            <label>
+                <i class="bi bi-book"></i> Taller:
+            </label>
+            <select id="taller">
+                <option value="">Selecciona un taller</option>
+                <option>Programacion Web</option>
+                <option>Robotica</option>
+                <option>Base de Datos</option>
+                <option>Diseño Grafico</option>
+            </select>
+
+            <button type="submit">
+                <i class="bi bi-check"></i>
+                Registrarse
+            </button>
+
+            <p id="mensaje"></p>
+
+        </form>
+    </div>
+
+    <footer>
+        <p><strong>Autor: Rea Garcia Santiago</strong></p>
+        <p><strong>No Control:  221130287</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
